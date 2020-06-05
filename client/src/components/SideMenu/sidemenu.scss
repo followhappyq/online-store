@@ -1,0 +1,29 @@
+.side-menu {
+  font-family: "Roboto Slab", serif;
+  width: 25%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  &__title {
+    width: 60%;
+    color: darken($color: #535d91, $amount: 0);
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+  &__list {
+    &__item {
+      cursor: pointer;
+      margin-top: 5px;
+      &:hover {
+        color: darken($color: #535d91, $amount: 20);
+      }
+    }
+  }
+}
