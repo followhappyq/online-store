@@ -1,5 +1,6 @@
 .discount-products {
-  width: 45%;
+  width: 500px;
+  flex-grow: 2;
   margin: 10px;
   .ant-carousel .slick-slide {
     text-align: center;

@@ -16,6 +16,7 @@ const SideMenu = () => {
     "TV & Home Audio",
     "Home Surveillance",
     "Virtual Reality",
+    "Smart Watches",
   ]
   return (
     <div className="side-menu">

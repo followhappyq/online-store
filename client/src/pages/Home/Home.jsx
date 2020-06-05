@@ -5,6 +5,8 @@ import {
   SideMenu,
   DiscountProducts,
   OurInstagram,
+  Footer,
+  BestSellers,
 } from "../../components"
 import "./home.scss"
 
@@ -13,9 +15,17 @@ const Home = () => {
     <div className="wrapper">
       <Header></Header>
       <div className="main-container">
-        <SideMenu></SideMenu>
-        <DiscountProducts></DiscountProducts>
-        <OurInstagram></OurInstagram>
+        <div className="main-container__item">
+          <SideMenu></SideMenu>
+          <DiscountProducts></DiscountProducts>
+          <OurInstagram></OurInstagram>
+        </div>
+        <div className="main-container__item">
+          <BestSellers></BestSellers>
+        </div>
+      </div>
+      <div className="footer-container">
+        <Footer></Footer>
       </div>
     </div>
   )

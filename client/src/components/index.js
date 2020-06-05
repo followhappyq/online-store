@@ -4,3 +4,6 @@ export { default as SearchParameters } from "./SearchParameters/SearchParameters
 export { default as SideMenu } from "./SideMenu/SideMenu"
 export { default as DiscountProducts } from "./DiscountProducts/DiscountProducts"
 export { default as OurInstagram } from "./OurInstagram/OurInstagram"
+export { default as Footer } from "./Footer/Footer"
+export { default as BestSellers } from "./BestSellers/BestSellers"
+export { default as BestSellersItem } from "./BestSellersItem/BestSellersItem"

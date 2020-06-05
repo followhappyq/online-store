@@ -1,9 +1,8 @@
 .our-instagram {
-  width: 30%;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   &__title {
-    width: 60%;
     height: 40px;
     display: flex;
     justify-content: center;
