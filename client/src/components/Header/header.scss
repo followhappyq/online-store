@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 5px 3px 10px rgb(155, 152, 152);
+
+  &__logo {
+    font-family: "Architects Daughter", cursive;
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  &__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40%;
+    &__field {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      position: relative;
+      &-panel {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+        outline: none;
+        padding-left: 20px;
+      }
+      &-button {
+        position: absolute;
+        right: 0;
+        height: 100%;
+
+        border: 2px solid black;
+        &:hover,
+        &:focus,
+        &:active,
+        &::after {
+          color: black;
+          border: 2px solid black;
+        }
+      }
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 60px;
+      font-size: 25px;
+      align-items: center;
+      cursor: pointer;
+      color: #fff;
+      background-color: rgb(77, 77, 77);
+      border-radius: 0 20px 20px 0;
+      transition: 0.3s ease;
+      &:hover {
+        background-color: rgb(26, 26, 26);
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    width: 10%;
+    &__icon {
+      width: 50%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      &:hover {
+        box-shadow: 0 0 3px #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+}
