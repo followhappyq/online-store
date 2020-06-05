@@ -1,8 +1,15 @@
 import React from "react"
-import { Home } from "./pages"
+import { Switch, Route } from "react-router-dom"
+
+import { Home, NotFound } from "./pages"
 
 const App = () => {
-  return <Home></Home>
+  return (
+    <Switch>
+      <Route exact path={["/"]} component={Home}></Route>
+      <Route path="*" component={NotFound} />
+    </Switch>
+  )
 }
 
 export default App
