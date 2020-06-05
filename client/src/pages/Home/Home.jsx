@@ -4,28 +4,28 @@ import {
   Header,
   SideMenu,
   DiscountProducts,
-  OurInstagram,
   Footer,
   BestSellers,
 } from "../../components"
+import { OurInstagram } from "../../containers"
 import "./home.scss"
 
 const Home = () => {
   return (
     <div className="wrapper">
-      <Header></Header>
+      <Header />
       <div className="main-container">
         <div className="main-container__item">
-          <SideMenu></SideMenu>
-          <DiscountProducts></DiscountProducts>
-          <OurInstagram></OurInstagram>
+          <SideMenu />
+          <DiscountProducts />
+          <OurInstagram />
         </div>
         <div className="main-container__item">
-          <BestSellers></BestSellers>
+          <BestSellers />
         </div>
       </div>
       <div className="footer-container">
-        <Footer></Footer>
+        <Footer />
       </div>
     </div>
   )

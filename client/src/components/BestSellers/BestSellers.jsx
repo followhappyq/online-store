@@ -1,4 +1,5 @@
 import React from "react"
+import shortid from "shortid"
 
 import { BestSellersItem } from "../"
 import "./bestsellers.scss"
@@ -18,13 +19,13 @@ const BestSellers = () => {
       price: "859",
     },
     {
-      title: "Huawei MateBook D 15",
+      title: "Huawei MateBook",
       img:
         "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/1/pr_2020_1_20_9_29_55_934_06.jpg",
       price: "789",
     },
     {
-      title: "Lenovo IdeaPad L340-15",
+      title: "Lenovo IdeaPad L340",
       img:
         "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2019/9/pr_2019_9_2_10_51_9_110_10.jpg",
       price: "985",
@@ -39,7 +40,7 @@ const BestSellers = () => {
   return (
     <div className="best-sellers">
       {items.map((item) => (
-        <BestSellersItem data={item} />
+        <BestSellersItem data={item} key={shortid.generate()} />
       ))}
     </div>
   )

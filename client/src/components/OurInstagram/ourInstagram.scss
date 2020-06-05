@@ -1,18 +1,35 @@
 .our-instagram {
-  flex-grow: 1;
+  width: 300px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   &__title {
     height: 40px;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid black;
+    width: 70%;
+    margin-bottom: 10px;
     h3 {
       font-family: "Playfair Display";
       text-transform: uppercase;
       font-size: 25px;
       font-weight: 600;
       margin-bottom: 0;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &-image {
+      height: 90px;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
