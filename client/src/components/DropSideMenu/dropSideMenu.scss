@@ -1,0 +1,12 @@
+.drop-side-menu {
+  position: absolute;
+  right: -600px;
+  top: 0;
+  z-index: 2;
+  visibility: hidden;
+  color: black;
+  width: 600px;
+  height: 410px;
+  background-color: #fff;
+  border-left: 1px solid #f5f5f5;
+}

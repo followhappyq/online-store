@@ -1,6 +1,7 @@
 import React from "react"
 import shortid from "shortid"
 
+import { DropSideMenu } from "../"
 import "./sidemenu.scss"
 
 const SideMenu = () => {
@@ -27,6 +28,7 @@ const SideMenu = () => {
         {items.map((item) => (
           <li className="side-menu__list__item" key={shortid.generate()}>
             {item}
+            <DropSideMenu item={item} />
           </li>
         ))}
       </ul>
