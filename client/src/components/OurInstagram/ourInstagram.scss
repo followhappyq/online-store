@@ -1,0 +1,19 @@
+.our-instagram {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  &__title {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    h3 {
+      font-family: "Playfair Display";
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+}
