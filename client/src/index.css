@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 code {
@@ -24,9 +26,4 @@ a {
 ul {
   list-style: none;
   margin-bottom: 0 !important;
-}
-
-#root {
-  width: 100%;
-  min-height: 100%;
 }
