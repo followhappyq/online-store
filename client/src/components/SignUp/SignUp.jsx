@@ -1,6 +1,7 @@
 import React from "react"
 import { Form } from "antd"
 import { UserOutlined, LockOutlined, MailOutlined } from "@ant-design/icons"
+import { Link } from "react-router-dom"
 
 import { FormField } from "../"
 import "./signup.scss"
@@ -13,8 +14,6 @@ const SignUp = (props) => {
     handleChange,
     handleBlur,
     handleSubmit,
-    dirty,
-    isValid,
     isSubmitting,
   } = props
   return (
@@ -38,7 +37,6 @@ const SignUp = (props) => {
         <FormField
           prefix={<UserOutlined />}
           name="name"
-          prefix={<UserOutlined />}
           handleChange={handleChange}
           handleBlur={handleBlur}
           touched={touched}

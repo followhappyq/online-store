@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 import { Header, Footer } from "../../components"
 import { SignUp as BaseSignUp } from "../../containers"
@@ -10,6 +11,9 @@ const SignUp = () => {
       <Header />
       <div className="main-container__signup">
         <BaseSignUp />
+        <Link className="auth__register-link" to="/signin">
+          Sign In
+        </Link>
       </div>
       <div className="footer-container">
         <Footer />
