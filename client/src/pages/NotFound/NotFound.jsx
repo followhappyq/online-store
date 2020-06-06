@@ -20,7 +20,7 @@ const NotFound = () => {
                 height="782.41658"
                 viewBox="0 0 977.71631 782.41658"
                 src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/imagination_ok71.svg"
-                class="item__image"
+                className="item__image"
                 alt="Imagination"
               >
                 <title>imagination</title>

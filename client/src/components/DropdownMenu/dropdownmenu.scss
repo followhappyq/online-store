@@ -1,60 +1,59 @@
-.icons {
-  width: 100%;
-  &__items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100%;
-    &__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      transition-duration: 0.5s;
-      font-size: 25px;
-      width: 100%;
-      cursor: pointer;
-      &:hover {
-        box-shadow: 0 0 3px #ccc;
-      }
+.dropdown-menu {
+  position: absolute;
+  bottom: -226px;
+  right: -196px;
+  background-color: #fff;
+  box-shadow: 0 0 3px #ccc;
+  width: 246px;
+  height: 215px;
+  border-radius: 0px 10px 10px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Playfair Display";
+  visibility: hidden;
+  opacity: 0;
 
-      &__dropdown {
-        &__signin {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #0070cc;
-          width: 80%;
-          color: #f5f5f5;
-          border-radius: 20px;
-          font-weight: bold;
-          margin: 5px;
-          &:hover {
-            background-color: darken($color: #0070cc, $amount: 10);
-          }
-        }
-        &__signup {
-          display: flex;
-          justify-content: center;
-          border: 1px solid #0070cc;
-          width: 90%;
-          border-radius: 20px;
-          font-weight: bold;
-          margin: 5px;
-          cursor: pointer;
-          &:hover {
-            background-color: darken($color: #0070cc, $amount: 10);
-            color: #fff;
-          }
-        }
-        &__orders,
-        &__profile {
-          cursor: pointer;
-          font-size: 15px;
-          font-weight: bold;
-          margin: 5px 0px 0px 0px;
-        }
+  &__item {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    &__signin {
+      width: 100%;
+      background-color: #404040;
+      display: flex;
+      justify-content: center;
+      color: #fff !important;
+      border-radius: 10px;
+      transition: 0.4s ease;
+      border: 1px solid #404040;
+      &:hover {
+        color: black !important;
+        background-color: #fff;
+        border: 1px solid #404040;
       }
+    }
+    &__signup {
+      width: 100%;
+      color: #404040;
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      transition: 0.4s ease;
+      border: 1px solid #404040;
+      color: black !important;
+      &:hover {
+        background-color: #404040;
+        color: #fff !important;
+      }
+    }
+    &__link {
+      font-size: 16px;
+    }
+    &__hr {
+      width: 90%;
+      border-bottom: 1px solid #404040;
     }
   }
 }

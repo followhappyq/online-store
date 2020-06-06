@@ -78,17 +78,33 @@
     justify-content: space-around;
     align-items: center;
     font-size: 25px;
-    width: 10%;
+    width: 150px;
     &__icon {
       width: 50%;
       height: 100%;
       padding: 10px;
       display: flex;
       justify-content: center;
+      &__item {
+        &__drop {
+          position: relative;
+        }
+      }
+
       &:hover {
         box-shadow: 0 0 3px #ccc;
         cursor: pointer;
         color: black;
+        .dropdown-menu {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      a {
+        color: rgba(0, 0, 0, 0.65);
+        &:hover {
+          color: black;
+        }
       }
     }
   }
