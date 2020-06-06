@@ -1,6 +1,7 @@
 import React from "react"
 
-import { Header, Footer, SignUp as BaseSignUp } from "../../components"
+import { Header, Footer } from "../../components"
+import { SignUp as BaseSignUp } from "../../containers"
 import "./signup.scss"
 
 const SignUp = () => {
