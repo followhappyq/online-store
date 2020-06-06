@@ -1,7 +1,7 @@
 import React from "react"
 
-import { Header, Footer, ProductsList } from "../../components"
-import { ProductsSideMenu } from "../../containers"
+import { Header, Footer } from "../../components"
+import { ProductsSideMenu, ProductsList } from "../../containers"
 import "./products.scss"
 
 const Products = () => {
@@ -16,7 +16,7 @@ const Products = () => {
           </div>
           <div className="main-container__products__content">
             <ProductsSideMenu />
-            <ProductsList />
+            <ProductsList title={title} />
           </div>
         </div>
       </div>

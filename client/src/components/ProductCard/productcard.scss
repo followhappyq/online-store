@@ -1,0 +1,35 @@
+.product-card {
+  border-bottom: 1px solid rgba($color: #404040, $alpha: 0.1);
+  font-family: "Roboto Slab", serif;
+  color: black;
+  margin: 15px;
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+
+    cursor: pointer;
+  }
+  &__container {
+    display: flex;
+    &__description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 30px;
+    }
+  }
+  &__cart {
+    height: 40px;
+    background-color: #404040;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    &:hover {
+      background: black;
+      cursor: pointer;
+    }
+  }
+}

@@ -22,6 +22,8 @@ const ProductsSideMenu = () => {
       "Intel",
       "Raspberry",
       "Jet",
+      "Irwin",
+      "256Bit",
     ],
     types: ["Standard", "Compact", "Micro PC", "Nettop"],
     processor: [
