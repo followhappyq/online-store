@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__title">
-        <h3>Online Store</h3>
+        <p>Online Store</p>
       </div>
       <div className="footer__socials">
         <InstagramOutlined className="footer__socials__item" />

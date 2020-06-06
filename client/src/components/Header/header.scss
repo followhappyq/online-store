@@ -4,12 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: #fff;
   box-shadow: 5px 3px 10px rgb(155, 152, 152);
   z-index: 1;
-
   &__logo {
     font-family: "Architects Daughter", cursive;
     font-size: 35px;
@@ -108,4 +107,7 @@
       }
     }
   }
+}
+.header__bubble {
+  height: 80px;
 }

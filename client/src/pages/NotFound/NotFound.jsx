@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import { Header, Footer } from "../../components"
+import { Header, Footer, About } from "../../components"
 import "./notfound.scss"
 
 const NotFound = () => {
@@ -221,6 +221,7 @@ const NotFound = () => {
             </Link>
           </div>
         </div>
+        <About />
       </div>
       <div className="footer-container">
         <Footer />

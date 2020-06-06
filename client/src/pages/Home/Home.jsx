@@ -6,6 +6,7 @@ import {
   DiscountProducts,
   Footer,
   BestSellers,
+  About,
 } from "../../components"
 import { OurInstagram } from "../../containers"
 import "./home.scss"
@@ -22,6 +23,7 @@ const Home = () => {
         </div>
         <div className="main-container__item">
           <BestSellers />
+          <About />
         </div>
       </div>
       <div className="footer-container">

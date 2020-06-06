@@ -2,22 +2,20 @@
   height: 80px;
   width: 100%;
   background-color: #fff;
-  position: fixed;
-  bottom: 0;
   box-shadow: 5px 3px 10px rgb(155, 152, 152);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  line-height: 1;
+  line-height: 0;
+  position: relative;
   &__title {
-    h3 {
+    p {
       font-family: "Architects Daughter", cursive;
-      font-size: 35px;
+      font-size: 36px;
       font-weight: 600;
       cursor: pointer;
       color: rgba(0, 0, 0, 0.65);
-      margin-bottom: 0;
       &:hover {
         color: black;
       }
@@ -28,6 +26,8 @@
     width: 130px;
     display: flex;
     justify-content: space-evenly;
+    position: absolute;
+    bottom: 22px;
     &__item {
       cursor: pointer;
       &:hover {
@@ -36,6 +36,8 @@
     }
   }
   &__copyrights {
+    position: absolute;
+    bottom: 0;
     font-family: "Playfair Display";
     font-weight: bold;
   }

@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Header, Footer } from "../../components"
+import { Header, Footer, About } from "../../components"
 import { SignIn as BaseSignIn } from "../../containers"
 import "./signin.scss"
 
@@ -11,6 +11,7 @@ const SignIn = () => {
       <div className="main-container__signin">
         <BaseSignIn />
       </div>
+      <About />
       <div className="footer-container">
         <Footer />
       </div>
