@@ -11,6 +11,7 @@ const createRoutes = (app: express.Express, io: socket.Server) => {
   const UserController = new UserCtrl(io)
 
   app.use(bodyParser.json())
+  app.use(checkAuth)
 
   app.get("/me", UserController.getMe)
   app.post("/signup", registerValidation, UserController.create)
