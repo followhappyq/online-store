@@ -14,6 +14,8 @@ const SignUp = (props) => {
     handleBlur,
     handleSubmit,
     isSubmitting,
+    isValid,
+    dirty,
   } = props
   return (
     <div className="signup">
@@ -65,13 +67,16 @@ const SignUp = (props) => {
           values={values}
           placeholder="Confirm Password"
         />
-        <div
-          className="signup__form__button"
-          onClick={handleSubmit}
-          disabled={isSubmitting}
-        >
-          Sign Up
-        </div>
+        <Form.Item>
+          {dirty && !isValid && <span>Error</span>}
+          <div
+            className="signup__form__button"
+            onClick={handleSubmit}
+            disabled={isSubmitting}
+          >
+            Sign Up
+          </div>
+        </Form.Item>
       </Form>
     </div>
   )

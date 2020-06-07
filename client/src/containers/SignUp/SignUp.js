@@ -3,6 +3,9 @@ import { withFormik } from "formik"
 import { SignUp } from "../../components"
 import validateForm from "../../utils/validate"
 
+import { userActions } from "../../redux/actions"
+import store from "../../redux/store"
+
 export default withFormik({
   enableReinitialize: true,
   mapPropsToValues: () => ({
@@ -20,4 +23,18 @@ export default withFormik({
 
     return errors
   },
+  handleSubmit: (values, { setSubmitting, props }) => {
+    store
+      .dispatch(userActions.fetchUserRegister(values))
+      .then(({ status }) => {
+        if (status === "success") {
+          props.history.push("/")
+        }
+        setSubmitting(false)
+      })
+      .catch(() => {
+        setSubmitting(false)
+      })
+  },
+  displayName: "SignUp",
 })(SignUp)
