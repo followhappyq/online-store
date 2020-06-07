@@ -1,6 +1,13 @@
 import { combineReducers } from "redux"
 
-const reducers = ["instagram", "products", "user", "cart", "filters"]
+const reducers = [
+  "instagram",
+  "products",
+  "user",
+  "cart",
+  "filters",
+  "category",
+]
 
 export default combineReducers(
   reducers.reduce((initial, name) => {

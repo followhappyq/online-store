@@ -10,7 +10,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 740,
-      "img": "https://content2.onliner.by/catalog/device/header/460f0130c258dc77efb09864cfb0f37c.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/460f0130c258dc77efb09864cfb0f37c.jpeg",
+      "description": "Irwin,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
       "manufacturer": "Jet",
@@ -21,7 +22,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 840,
-      "img": "https://content2.onliner.by/catalog/device/header/8b98d73d89e7118f4a91a487b24e342e.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/8b98d73d89e7118f4a91a487b24e342e.jpeg",
+      "description": "Jet,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
       "manufacturer": "256Bit",
@@ -32,7 +34,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 940,
-      "img": "https://content2.onliner.by/catalog/device/header/ed72543c2b356de91792396104e3b352.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/ed72543c2b356de91792396104e3b352.jpeg",
+      "description": "256Bit,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
       "manufacturer": "Irwin",
@@ -43,7 +46,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 740,
-      "img": "https://content2.onliner.by/catalog/device/header/460f0130c258dc77efb09864cfb0f37c.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/460f0130c258dc77efb09864cfb0f37c.jpeg",
+      "description": "Irwin,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
       "manufacturer": "Jet",
@@ -54,7 +58,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 840,
-      "img": "https://content2.onliner.by/catalog/device/header/8b98d73d89e7118f4a91a487b24e342e.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/8b98d73d89e7118f4a91a487b24e342e.jpeg",
+      "description": "Jet,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
       "manufacturer": "256Bit",
@@ -65,7 +70,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 940,
-      "img": "https://content2.onliner.by/catalog/device/header/ed72543c2b356de91792396104e3b352.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/ed72543c2b356de91792396104e3b352.jpeg",
+      "description": "256Bit,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
       "manufacturer": "Irwin",
@@ -76,7 +82,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 740,
-      "img": "https://content2.onliner.by/catalog/device/header/460f0130c258dc77efb09864cfb0f37c.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/460f0130c258dc77efb09864cfb0f37c.jpeg",
+      "description": "Irwin,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
       "manufacturer": "Jet",
@@ -87,7 +94,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 840,
-      "img": "https://content2.onliner.by/catalog/device/header/8b98d73d89e7118f4a91a487b24e342e.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/8b98d73d89e7118f4a91a487b24e342e.jpeg",
+      "description": "Jet,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
       "manufacturer": "256Bit",
@@ -98,7 +106,8 @@
       "memoryType": "DDR3",
       "graphicCard": "NVIDIA GeForce GTX",
       "price": 940,
-      "img": "https://content2.onliner.by/catalog/device/header/ed72543c2b356de91792396104e3b352.jpeg"
+      "img": "https://content2.onliner.by/catalog/device/header/ed72543c2b356de91792396104e3b352.jpeg",
+      "description": "256Bit,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     }
   ]
 }

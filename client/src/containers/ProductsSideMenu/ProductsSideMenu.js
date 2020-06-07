@@ -13,49 +13,70 @@ const ProductsSideMenu = ({
   setFilter,
   setQuery,
   filters,
+  category,
+  products,
 }) => {
-  const [filterQuery, setFilterQuery] = useState("")
-  const [checkBox, setCheckBox] = useState(false)
   const [selectedItems, setSelectedItems] = useState([])
+  const [categoryTitle, setCategoryTitle] = useState(category)
 
   const onStateChange = (e) => {
+    const listTitle = e.target.listTitle
     const value = e.target.name
+
     if (selectedItems.includes(value)) {
       const index = selectedItems.indexOf(value)
       setSelectedItems([
         ...selectedItems.slice(0, index),
         ...selectedItems.slice(index + 1),
       ])
+      setQuery([
+        ...filters.query.slice(0, index),
+        ...filters.query.slice(index + 1),
+      ])
     } else {
       setSelectedItems([...selectedItems, value])
+      setQuery([...filters.query, value])
     }
   }
+  /* 
+  const onChangeFilters = () => {
+    console.log(
+      filters.query.map((item) => {
+        products[category].map((elem) => {
+          console.log(
+            elem.description.toLowerCase().indexOf(item.toLowerCase()) >= 0
+          )
+        })
+      })
+    )
+  } */
 
   useEffect(() => {
     setFiltersTitle(filtersTitleDB)
     setFiltersDescription(filtersDB)
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-  const onFilterChange = (e) => {
-    setCheckBox(!checkBox)
-  }
 
   return (
     <BaseProductsSideMenu
       filtersTitle={filters.filtersTitle}
       filters={filters.filters}
-      onFilterChange={onFilterChange}
       onStateChange={onStateChange}
       selectedItems={selectedItems}
+      category={categoryTitle}
     />
   )
 }
 
 export default connect(
-  ({ filters, filtersTitle }) => ({
+  ({ filters, filtersTitle, category, products }) => ({
     filters,
     filtersTitle,
+    category: category.category,
+    products: products.products,
   }),
   filtersAction
 )(ProductsSideMenu)
+
+/* && filterProducts(products.products[category.category], filters.query) */

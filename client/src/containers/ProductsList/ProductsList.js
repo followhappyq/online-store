@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { connect } from "react-redux"
 import DB from "../../json/products.json"
 
 import { ProductsList as BaseProductList } from "../../components"
 import { productsAction } from "../../redux/actions"
 
-const ProductsList = ({ title, setProducts, products }) => {
+const ProductsList = ({ title, setProducts, products, query }) => {
   useEffect(() => {
     setProducts(DB)
 
@@ -17,9 +17,18 @@ const ProductsList = ({ title, setProducts, products }) => {
   )
 }
 
+const filterProducts = (products, query) => {
+  return products.filter((product) => {
+    query.map((item) => product.description.toLowerCase().indexOf(item) >= 0)
+  })
+}
+
 export default connect(
-  ({ products }) => ({
+  ({ products, filters, category }) => ({
     products: products.products,
+    query: filters.query,
   }),
   productsAction
 )(ProductsList)
+/* 
+&& filterProducts(products.products[category.category], filters.query), */

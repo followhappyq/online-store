@@ -1,7 +1,7 @@
 const initialState = {
   filters: null,
   filtersTitle: null,
-  query: "",
+  query: [],
   filterBy: "all",
 }
 

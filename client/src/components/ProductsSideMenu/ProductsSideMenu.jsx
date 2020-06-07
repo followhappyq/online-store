@@ -9,19 +9,18 @@ const ProductsSideMenu = ({
   filtersTitle,
   onStateChange,
   selectedItems,
+  category,
 }) => {
-  const def = "computers"
-
   return (
     <div className="products-sidemenu">
-      {filters !== null && filtersTitle !== null
-        ? Object.keys(filtersTitle[def]).map((elem) => (
+      {filters !== null && filtersTitle !== null && category !== null
+        ? Object.keys(filtersTitle[category]).map((elem) => (
             <div className="products-sidemenu__item" key={shortid.generate()}>
               <div className="products-sidemenu__item__title">
-                <p>{elem[def]}</p>
+                <p>{filtersTitle[category][elem]}</p>
               </div>
               <ul className="products-sidemenu__item__list">
-                {filters[def][elem].map((item) => (
+                {filters[category][elem].map((item) => (
                   <li
                     className="products-sidemenu__item__list__element"
                     key={shortid.generate()}
@@ -30,6 +29,7 @@ const ProductsSideMenu = ({
                       name={item}
                       onChange={onStateChange}
                       checked={selectedItems.includes(item)}
+                      listTitle={filtersTitle[category][elem]}
                     >
                       {item}
                     </Checkbox>
@@ -41,6 +41,10 @@ const ProductsSideMenu = ({
         : "zlp"}
     </div>
   )
+}
+
+ProductsSideMenu.defaultProps = {
+  category: "computers",
 }
 
 export default ProductsSideMenu
