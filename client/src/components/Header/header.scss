@@ -87,12 +87,14 @@
       &__item {
         &__drop {
           position: relative;
+
+          cursor: pointer;
         }
       }
 
       &:hover {
         box-shadow: 0 0 3px #ccc;
-        cursor: pointer;
+
         color: black;
         .dropdown-menu {
           visibility: visible;

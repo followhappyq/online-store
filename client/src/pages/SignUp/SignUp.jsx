@@ -10,8 +10,9 @@ const SignUp = () => {
       <Header />
       <div className="main-container__signup">
         <BaseSignUp />
+        <About />
       </div>
-      <About />
+
       <div className="footer-container">
         <Footer />
       </div>

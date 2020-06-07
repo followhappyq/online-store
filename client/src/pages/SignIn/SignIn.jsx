@@ -10,8 +10,9 @@ const SignIn = () => {
       <Header />
       <div className="main-container__signin">
         <BaseSignIn />
+        <About />
       </div>
-      <About />
+
       <div className="footer-container">
         <Footer />
       </div>
