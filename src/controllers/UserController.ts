@@ -56,7 +56,7 @@ class UserController {
   create = (req: express.Request, res: express.Response) => {
     const postData = {
       email: req.body.email,
-      login: req.body.login,
+      name: req.body.name,
       password: req.body.password,
     }
 

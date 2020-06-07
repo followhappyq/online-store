@@ -11,13 +11,12 @@ const createRoutes = (app: express.Express, io: socket.Server) => {
   const UserController = new UserCtrl(io)
 
   app.use(bodyParser.json())
-  app.use(checkAuth)
 
-  app.get("/user/me", UserController.getMe)
-  app.post("/user/signup", registerValidation, UserController.create)
-  app.post("/user/signin", loginValidation, UserController.login)
-  app.get("/user/find", UserController.findUsers)
-  app.get("/user/:id", UserController.show)
+  app.get("/me", UserController.getMe)
+  app.post("/signup", registerValidation, UserController.create)
+  app.post("/signin", loginValidation, UserController.login)
+  app.get("/find", UserController.findUsers)
+  app.get("/:id", UserController.show)
 }
 
 export default createRoutes
