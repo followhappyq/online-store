@@ -1,6 +1,8 @@
 const initialState = {
   filters: null,
   filtersTitle: null,
+  query: "",
+  filterBy: "all",
 }
 
 export default (state = initialState, { type, payload }) => {
@@ -14,6 +16,16 @@ export default (state = initialState, { type, payload }) => {
       return {
         ...state,
         filtersTitle: payload,
+      }
+    case "FILTERS:SET_QUERY":
+      return {
+        ...state,
+        query: payload,
+      }
+    case "FILTERS:SET_FILTER":
+      return {
+        ...state,
+        filterBy: payload,
       }
 
     default:

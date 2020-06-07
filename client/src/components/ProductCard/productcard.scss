@@ -20,13 +20,16 @@
   }
   &__cart {
     height: 40px;
+    font-size: 30px;
     background-color: #404040;
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     margin-left: 20px;
+    font-weight: bold;
+
     &:hover {
       background: black;
       cursor: pointer;

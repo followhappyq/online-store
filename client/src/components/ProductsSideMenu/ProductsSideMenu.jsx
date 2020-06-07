@@ -1,11 +1,15 @@
 import React from "react"
 import shortid from "shortid"
-
 import { Checkbox } from "antd"
 
 import "./productsSideMenu.scss"
 
-const ProductsSideMenu = ({ filters, filtersTitle }) => {
+const ProductsSideMenu = ({
+  filters,
+  filtersTitle,
+  onStateChange,
+  selectedItems,
+}) => {
   const def = "computers"
 
   return (
@@ -14,7 +18,7 @@ const ProductsSideMenu = ({ filters, filtersTitle }) => {
         ? Object.keys(filtersTitle[def]).map((elem) => (
             <div className="products-sidemenu__item" key={shortid.generate()}>
               <div className="products-sidemenu__item__title">
-                <p>{filtersTitle[def][elem]}</p>
+                <p>{elem[def]}</p>
               </div>
               <ul className="products-sidemenu__item__list">
                 {filters[def][elem].map((item) => (
@@ -22,7 +26,13 @@ const ProductsSideMenu = ({ filters, filtersTitle }) => {
                     className="products-sidemenu__item__list__element"
                     key={shortid.generate()}
                   >
-                    <Checkbox>{item}</Checkbox>
+                    <Checkbox
+                      name={item}
+                      onChange={onStateChange}
+                      checked={selectedItems.includes(item)}
+                    >
+                      {item}
+                    </Checkbox>
                   </li>
                 ))}
               </ul>
