@@ -3,7 +3,6 @@ import React from "react"
 import "./ourInstagram.scss"
 
 const OurInstagram = ({ images }) => {
-  console.log(images.length > 0)
   return (
     <div className="our-instagram">
       <div className="our-instagram__title">

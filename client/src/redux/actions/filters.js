@@ -1,7 +1,11 @@
 const actions = {
-  setProducts: (products) => ({
+  setFilters: (filters) => ({
     type: "FILTERS:SET_FILTERS",
-    payload: products,
+    payload: filters,
+  }),
+  setFiltersTitle: (filtersTitle) => ({
+    type: "FILTERS:SET_FILTERS_TITLE",
+    payload: filtersTitle,
   }),
 }
 

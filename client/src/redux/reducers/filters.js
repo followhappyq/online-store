@@ -1,5 +1,6 @@
 const initialState = {
-  products: null,
+  filters: null,
+  filtersTitle: null,
 }
 
 export default (state = initialState, { type, payload }) => {
@@ -7,7 +8,12 @@ export default (state = initialState, { type, payload }) => {
     case "FILTERS:SET_FILTERS":
       return {
         ...state,
-        products: payload,
+        filters: payload,
+      }
+    case "FILTERS:SET_FILTERS_TITLE":
+      return {
+        ...state,
+        filtersTitle: payload,
       }
 
     default:
