@@ -1,2 +1,5 @@
 export { default as instagramActions } from "./instagram"
 export { default as userActions } from "./user"
+export { default as productsAction } from "./products"
+export { default as filtersAction } from "./filters"
+export { default as cart } from "./cart"

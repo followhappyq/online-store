@@ -7,9 +7,11 @@ import "./productsList.scss"
 const ProductsList = ({ products }) => {
   return (
     <ul className="products-list">
-      {products.map((item) => (
-        <ProductCard item={item} key={shortid.generate()} />
-      ))}
+      {products
+        ? products.map((item) => (
+            <ProductCard item={item} key={shortid.generate()} />
+          ))
+        : "Something went wrong."}
     </ul>
   )
 }

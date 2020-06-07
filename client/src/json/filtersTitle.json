@@ -1,0 +1,10 @@
+{
+  "computers": {
+    "manufacturer": "Manufacturer",
+    "types": "Types",
+    "processor": "Processor",
+    "hdd": "HDD",
+    "memoryType": "Memory type",
+    "graphicCard": "Graphic card"
+  }
+}
