@@ -2,6 +2,7 @@
   "smart": [],
   "computers": [
     {
+      "_id": 1,
       "manufacturer": "Irwin",
       "productName": "Irwin Computers Coffee Lake G1-07",
       "type": "Standard",
@@ -14,6 +15,7 @@
       "description": "Irwin,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
+      "_id": 2,
       "manufacturer": "Jet",
       "productName": "Jet Gamer 5R2600D16SD1X166L2W6",
       "type": "Standard",
@@ -26,6 +28,7 @@
       "description": "Jet,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
+      "_id": 3,
       "manufacturer": "256Bit",
       "productName": "256Bit i9400161660S",
       "type": "Standard",
@@ -38,6 +41,7 @@
       "description": "256Bit,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
+      "_id": 4,
       "manufacturer": "Irwin",
       "productName": "Irwin Computers Coffee Lake G1-07",
       "type": "Standard",
@@ -50,6 +54,7 @@
       "description": "Irwin,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
+      "_id": 5,
       "manufacturer": "Jet",
       "productName": "Jet Gamer 5R2600D16SD1X166L2W6",
       "type": "Standard",
@@ -62,6 +67,7 @@
       "description": "Jet,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
+      "_id": 6,
       "manufacturer": "256Bit",
       "productName": "256Bit i9400161660S",
       "type": "Standard",
@@ -74,6 +80,7 @@
       "description": "256Bit,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
+      "_id": 7,
       "manufacturer": "Irwin",
       "productName": "Irwin Computers Coffee Lake G1-07",
       "type": "Standard",
@@ -86,6 +93,7 @@
       "description": "Irwin,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
+      "_id": 8,
       "manufacturer": "Jet",
       "productName": "Jet Gamer 5R2600D16SD1X166L2W6",
       "type": "Standard",
@@ -98,6 +106,7 @@
       "description": "Jet,Standard, Intel Core i5, SSD, DDR3,NVIDIA GeForce GTX"
     },
     {
+      "_id": 9,
       "manufacturer": "256Bit",
       "productName": "256Bit i9400161660S",
       "type": "Standard",

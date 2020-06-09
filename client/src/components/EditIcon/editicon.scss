@@ -1,0 +1,16 @@
+.edit-icon {
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, 25%);
+  font-size: 20px;
+  color: lighten($color: #404040, $amount: 20);
+  cursor: pointer;
+  transition: 1s ease;
+
+  &:hover {
+    color: black;
+  }
+  @media screen and (max-width: 1050px) {
+    transform: translate(-50%, 35%);
+  }
+}
