@@ -1,7 +1,7 @@
 import React from "react"
 
-import { Header, Footer } from "../../components"
-import { ProductsSideMenu, ProductsList } from "../../containers"
+import { Footer } from "../../components"
+import { Header, ProductsSideMenu, ProductsList } from "../../containers"
 import "./products.scss"
 
 const Products = () => {

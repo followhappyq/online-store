@@ -11,7 +11,7 @@ import { Dropdown, Button } from "antd"
 import { SearchParameters, DropdownMenu, CardPopup } from "../"
 import "./header.scss"
 
-const Header = () => {
+const Header = ({ cart }) => {
   return (
     <div className="header-container">
       <div className="header__bubble"></div>
@@ -48,7 +48,9 @@ const Header = () => {
               <Link to="/products">
                 <ShoppingCartOutlined />
               </Link>
-              1
+              <span className="header__icons__icon__item__cart-count">
+                {cart}
+              </span>
             </li>
           </ul>
         </div>
