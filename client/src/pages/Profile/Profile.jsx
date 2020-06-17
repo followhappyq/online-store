@@ -1,6 +1,7 @@
 import React from "react"
 
-import { Header, Footer, About, Profile as BaseProfile } from "../../components"
+import { Footer, About, Profile as BaseProfile } from "../../components"
+import { Header } from "../../containers"
 
 import "./profile.scss"
 
@@ -9,6 +10,8 @@ const Profile = () => {
     name: "ProfileName",
     email: "profile@profile.com",
     number: "Profile phone number",
+    city: "Profile city",
+    adress: "Profile address",
   }
   return (
     <div className="wrapper">

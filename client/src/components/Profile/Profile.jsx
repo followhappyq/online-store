@@ -29,11 +29,11 @@ const Profile = ({ info }) => {
         ></Input>
         <EditIcon />
       </div>
-      <div className="profile__adress">
-        <div className="profile__adress__description">Adress:</div>
+      <div className="profile__address">
+        <div className="profile__address__description">Adress:</div>
         <Input
-          className="profile__adress__title"
-          value={info.name}
+          className="profile__address__title"
+          value={info.adress}
           disabled={true}
         ></Input>
         <EditIcon />
@@ -42,7 +42,7 @@ const Profile = ({ info }) => {
         <div className="profile__city__description">City:</div>
         <Input
           className="profile__city__title"
-          value={info.name}
+          value={info.city}
           disabled={true}
         ></Input>
         <EditIcon />

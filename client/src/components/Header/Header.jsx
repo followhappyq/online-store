@@ -8,7 +8,7 @@ import {
 } from "@ant-design/icons"
 import { Dropdown, Button } from "antd"
 
-import { SearchParameters, DropdownMenu } from "../"
+import { SearchParameters, DropdownMenu, CardPopup } from "../"
 import "./header.scss"
 
 const Header = () => {
@@ -44,9 +44,12 @@ const Header = () => {
             </li>
           </ul>
           <ul className="header__icons__icon">
-            <Link to="/products">
-              <ShoppingCartOutlined />
-            </Link>
+            <li className="header__icons__icon__item">
+              <Link to="/products">
+                <ShoppingCartOutlined />
+              </Link>
+              1
+            </li>
           </ul>
         </div>
       </div>

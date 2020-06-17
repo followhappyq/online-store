@@ -1,27 +1,18 @@
 import React from "react"
 
-import {
-  SideMenu,
-  DiscountProducts,
-  Footer,
-  BestSellers,
-  About,
-} from "../../components"
+import { Footer, About } from "../../components"
 import { Header, OurInstagram } from "../../containers"
-import "./home.scss"
+import "./cart.scss"
 
-const Home = () => {
+const Cart = () => {
   return (
     <div className="wrapper">
       <Header />
       <div className="main-container">
         <div className="main-container__item">
-          <SideMenu />
-          <DiscountProducts />
           <OurInstagram />
         </div>
         <div className="main-container__item">
-          <BestSellers />
           <About />
         </div>
       </div>
@@ -32,4 +23,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Cart

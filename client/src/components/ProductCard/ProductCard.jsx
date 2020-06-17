@@ -2,7 +2,7 @@ import React from "react"
 
 import "./productcard.scss"
 
-const ProductCard = ({ item }) => {
+const ProductCard = ({ item, onProductAdded }) => {
   return (
     <li className="product-card">
       <div className="product-card__title">{item.productName}</div>
@@ -14,7 +14,9 @@ const ProductCard = ({ item }) => {
         <div className="product-card__container__price">
           Price: ${item.price}
         </div>
-        <div className="product-card__cart">+</div>
+        <div className="product-card__cart" onClick={onProductAdded}>
+          +
+        </div>
       </div>
     </li>
   )

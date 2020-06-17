@@ -1,7 +1,7 @@
 import React from "react"
 
-import { Header, Footer, About } from "../../components"
-import { SignIn as BaseSignIn } from "../../containers"
+import { Footer, About } from "../../components"
+import { Header, SignIn as BaseSignIn } from "../../containers"
 import "./signin.scss"
 
 const SignIn = () => {

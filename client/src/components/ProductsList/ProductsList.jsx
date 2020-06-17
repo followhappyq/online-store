@@ -1,7 +1,8 @@
 import React from "react"
 import shortid from "shortid"
 
-import { ProductCard } from "../"
+import { ProductCard } from "../../containers"
+
 import "./productsList.scss"
 
 const ProductsList = ({ products }) => {
