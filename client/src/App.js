@@ -1,7 +1,7 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
 
-import { Home, NotFound, SignUp, SignIn, Products, Profile } from "./pages"
+import { Home, NotFound, SignUp, SignIn, Products, Profile, Cart } from "./pages"
 
 const App = () => {
   return (
@@ -11,6 +11,7 @@ const App = () => {
       <Route exact path={["/signin"]} component={SignIn} />
       <Route exact path={["/products"]} component={Products} />
       <Route exact path={["/profile"]} component={Profile} />
+      <Route exact path={["/cart"]} component={Cart} />
       <Route path="*" component={NotFound} />
     </Switch>
   )

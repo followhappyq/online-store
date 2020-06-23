@@ -12,12 +12,10 @@ const OurInstagram = ({ fetchInstagram, instagram }) => {
       .then((data) => {
         fetchInstagram(data)
       })
+      .catch((error) => {})
     // eslint-disable-next-line
   }, [])
   return <BaseInstagram images={instagram} />
 }
 
-export default connect(
-  ({ instagram }) => ({ instagram: instagram.instagram }),
-  instagramActions
-)(OurInstagram)
+export default connect(({ instagram }) => ({ instagram: instagram.instagram }), instagramActions)(OurInstagram)

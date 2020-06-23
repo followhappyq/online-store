@@ -1,15 +1,16 @@
 import React from "react"
-import { connect } from "react-redux"
+import { useDispatch } from "react-redux"
 
-import { cartActions } from "../../redux/actions"
+import { addToCart } from "../../redux/actions/cart"
 import { ProductCard as BaseProductCard } from "../../components"
 
-const ProductCard = ({ item, addToCart }) => {
+const ProductCard = ({ item }) => {
+  const dispatch = useDispatch()
   const onProductAdded = () => {
-    addToCart(item)
+    dispatch(addToCart(item))
   }
 
   return <BaseProductCard item={item} onProductAdded={onProductAdded} />
 }
 
-export default connect(({}) => ({}), cartActions)(ProductCard)
+export default ProductCard

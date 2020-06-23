@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Footer, About } from "../../components"
-import { Header, OurInstagram } from "../../containers"
+import { Header, Cart as BaseCart } from "../../containers"
 import "./cart.scss"
 
 const Cart = () => {
@@ -10,7 +10,7 @@ const Cart = () => {
       <Header />
       <div className="main-container">
         <div className="main-container__item">
-          <OurInstagram />
+          <BaseCart />
         </div>
         <div className="main-container__item">
           <About />

@@ -1,14 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import {
-  SearchOutlined,
-  CaretDownOutlined,
-  UserOutlined,
-  ShoppingCartOutlined,
-} from "@ant-design/icons"
+import { SearchOutlined, CaretDownOutlined, UserOutlined, ShoppingCartOutlined } from "@ant-design/icons"
 import { Dropdown, Button } from "antd"
 
-import { SearchParameters, DropdownMenu, CardPopup } from "../"
+import { SearchParameters, DropdownMenu } from "../"
 import "./header.scss"
 
 const Header = ({ cart }) => {
@@ -48,11 +43,12 @@ const Header = ({ cart }) => {
               <Link to="/products">
                 <ShoppingCartOutlined />
               </Link>
-              <span className="header__icons__icon__item__cart-count">
-                {cart}
-              </span>
+              <span className="header__icons__icon__item__cart-count">{cart}</span>
             </li>
           </ul>
+          <span className="header__icons">
+            <Link to="/cart">Cart</Link>
+          </span>
         </div>
       </div>
     </div>
